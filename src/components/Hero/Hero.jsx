@@ -55,20 +55,20 @@ const Hero = () => {
                     </p>
                     <div>
                         <button
-                            className="bg-gradient-to-r from-primary to-secondary text-white py-2 px-4 rounded-full mt-4 hover:scale-105 duration-200"
+                            className="bg-gradient-to-r from-primary to-secondary text-white py-2 px-4 rounded-full hover:scale-105 duration-200"
                         >
                             Order Now
                         </button>
                     </div>
                 </div>
                 {/* image-section */}
-                <div className="min-h-[450px] flex justify-center items-center relative order-1 sm-order-2 ">
+                <div className="min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative order-1 sm-order-2 ">
                     {/* main image */}
                     <div className="h-[300px] sm:h-[450px] overflow-hidden flex justify-center items-center">
                         <img src={imageId} alt="" className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain mx-auto"/>
                     </div>
                     {/* outher image list*/}
-                    <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1 bg-white rounded-full">
+                    <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1 dark:bg-gray-900 rounded-xl p-2">
                         {
                             ImageList.map((image) => (
                                 <div key={image.id} onClick={() => {
@@ -76,7 +76,7 @@ const Hero = () => {
                                     setTitle(image.title);
                                     setDescription(image.description);
                                 }}>
-                                    <img src={image.img} alt="" className="max-w-[100px] h-[100px]  object-contain inline-block cursor-pointer hover:scale-110 duration-200"/>
+                                    <img src={image.img} alt="" className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-110 duration-200"/>
                                 </div>
                             ))
                         }
