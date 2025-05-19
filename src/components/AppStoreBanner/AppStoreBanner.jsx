@@ -18,11 +18,15 @@ const AppStoreBanner = () => {
         <div className="container">
             <div className="space-y-6 max-w-xl mx-auto">
                 <h1 
+                    data-aos = "slide-up"
                     className="text-2xl text-clip text-center sm:text-4xl font-semibold"
                 >
                     Read Books at your fingertips
                 </h1>
-                <div className="flex flex-wrap justify-center items-center gap-4">
+                <div 
+                    data-aos = "slide-up"
+                    className="flex flex-wrap justify-center items-center gap-4"
+                >
                     <a href="#">
                         <img 
                             src={PlayStoreImg} 

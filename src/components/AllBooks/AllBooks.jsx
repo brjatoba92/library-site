@@ -46,7 +46,10 @@ const AllBooks = () => {
         <div className="py-10">
             <div className="container placeholder-gray-100">
                 {/* all books section */}
-                <div className="text-center mb-20 max-w-[400px] mx-auto">
+                <div 
+                    data-aos = "slide-up"
+                    className="text-center mb-20 max-w-[400px] mx-auto"
+                >
                     <p
                         className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
                     >
@@ -58,7 +61,7 @@ const AllBooks = () => {
                     </p>
                 </div>
                 {/* card section */}
-                <div>
+                <div data-aos = "slide-up" data-aos-delay = "500">
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-5 place-items-center gap-5">
                         {
                             BooksData.map((book) => (
