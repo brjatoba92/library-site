@@ -25,7 +25,7 @@ const ImageList = [
     },
 ]
 
-const Hero = () => {
+const Hero = ({ handleOrderPopup }) => {
     const [imageId, setImageId] = useState(Book2);
     const [title, setTitle] = useState("His Life will forever be Changed");
     const [description, setDescription] = useState(
@@ -70,6 +70,7 @@ const Hero = () => {
                     </p>
                     <div>
                         <button
+                            onClick={handleOrderPopup}
                             data-aos = "zoom-in"
                             className="bg-gradient-to-r from-primary to-secondary text-white py-2 px-4 rounded-full hover:scale-105 duration-200"
                         >
