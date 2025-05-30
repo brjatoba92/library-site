@@ -39,16 +39,17 @@ const Hero = ({ handleOrderPopup }) => {
         width: "100%",
     };
     return <>
-    <div className="min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200" style={bgImage}>
+    <div 
+        className="min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200" 
+        style={bgImage}>
         <div className="container pb-8 sm:pb-0">
-            <div className="grid grid-cols-1 sm:grid-cols-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2">
                 {/* text-content-section */}
                 <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
                     <h1 
                         data-aos = "zoom-out"
                         data-aos-duration = "500"
                         className="text-5xl sm:text-6xl lg:text-7xl font-bold"
-                        
                     >
                         {title}
                         <p
@@ -91,7 +92,7 @@ const Hero = ({ handleOrderPopup }) => {
                     </div>
                     {/* outher image list*/}
                     <div 
-                        className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1bg:white rounded-full"
+                        className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1 bg:white rounded-full"
                     >
                         {
                             ImageList.map((image) => (
