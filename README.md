@@ -1,12 +1,41 @@
-# React + Vite
+# Boa Leitura Livraria Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![BookClub Demo](/public/demo.png 'Library Demo')
 
-Currently, two official plugins are available:
+## Descrição
+Este projeto visou o desenvolvimento de um site para o ramo de livraria.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Version
 
-## Expanding the ESLint configuration
+## Tecnologias utilizadas
+- React.js
+- TailwindCSS
+- useState
+- useEffect
+- React DOM
+- React Icons
+- Lucide React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Principais funcionalidades
+- Modo escuro
+- Popup para encomendar um livro no botão localizado no header e a cada imagem de livro
+- Responsividade quanto ao tamanho da tela do dispositivo
+
+## Instuções para executar
+
+1. Baixe o projeto
+```
+git clone https://github.com/brjatoba92/library-site.git
+```
+
+2. Instale as dependencias
+
+```
+npm install
+```
+
+3. Execute o projeto
+
+```
+npm run dev
+```
