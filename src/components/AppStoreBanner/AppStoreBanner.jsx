@@ -21,7 +21,7 @@ const AppStoreBanner = () => {
                     data-aos = "slide-up"
                     className="text-2xl text-clip text-center sm:text-4xl font-semibold"
                 >
-                    Read Books at your fingertips
+                    Baixe nosso aplicativo e tenha acesso a todos os nossos serviços na palma da sua mão!
                 </h1>
                 <div 
                     data-aos = "slide-up"

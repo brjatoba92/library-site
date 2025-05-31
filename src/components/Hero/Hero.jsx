@@ -1,35 +1,35 @@
 import React, {useState} from "react";
-import Book1 from "../../assets/books/book1.jpg";
-import Book2 from "../../assets/books/book2.jpg";
-import Book3 from "../../assets/books/book3.jpg";
+import Book1 from "../../assets/books/berkhof.jpg";
+import Book2 from "../../assets/books/comentario_esdras.jpg";
+import Book3 from "../../assets/books/espiritualidade_reformada.jpg";
 import Vector from "../../assets/website/blue-pattern.png";
 
 const ImageList = [
     {
         id: 1,
         img: Book1,
-        title: "Who's there? ",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rerum.",
+        title: "Teologia Sistematica",
+        description: "Em classico da teologia sistemática, Berkhof apresenta uma visão abrangente e acessível dos principais temas teológicos.",
     },
     {
         id: 2,
         img: Book2,
-        title: "His Life will forever be Changed",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rerum.",
+        title: "Estudos Biblicos Expositivos de Esdras e Neemias",
+        description: "Uma análise detalhada dos livros de Esdras e Neemias, explorando temas de restauração e liderança espiritual.",
     },
     {
         id: 3,
         img: Book3,
-        title: "Lost Boy",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rerum.",
+        title: "Espiritualidade Reformada",
+        description: "Uma exploração profunda da espiritualidade reformada, abordando suas raízes bíblicas e teológicas.",
     },
 ]
 
 const Hero = ({ handleOrderPopup }) => {
     const [imageId, setImageId] = useState(Book2);
-    const [title, setTitle] = useState("His Life will forever be Changed");
+    const [title, setTitle] = useState("Estudos Biblicos Expositivos de Esdras e Neemias");
     const [description, setDescription] = useState(
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rerum."
+        "Uma análise detalhada dos livros de Esdras e Neemias, explorando temas de restauração e liderança espiritual."
     )
     const bgImage = {
         backgroundImage: `url(${Vector})`,

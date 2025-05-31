@@ -1,30 +1,30 @@
 import React from "react";
-import Img1 from "../../assets/books/book1.jpg";
-import Img2 from "../../assets/books/book2.jpg";
-import Img3 from "../../assets/books/book3.jpg";
+import Img1 from "../../assets/books/berkhof.jpg";
+import Img2 from "../../assets/books/comentario_esdras.jpg";
+import Img3 from "../../assets/books/espiritualidade_reformada.jpg";
 import { FaStar } from "react-icons/fa";
 
 const BooksData = [
     {
         id: 1,
         img: Img1,
-        title: "Who's there?",
+        title: "Teologia Sistematica",
         author: "Anoymunt",
-        description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rerum.",
+        description: "Em classico da teologia sistemática, Berkhof apresenta uma visão abrangente e acessível dos principais temas teológicos.",
     },
     {
         id: 2,
         img: Img2,
-        title: "His Life",
+        title: "Estudos Biblicos Expositivos de Esdras e Neemias",
         author: "Anoymunt",
-        description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rerum.",
+        description: "Uma análise detalhada dos livros de Esdras e Neemias, explorando temas de restauração e liderança espiritual.",
     },
     {
         id: 3,
         img: Img3,
-        title: "Lost Boy",
+        title: "Espiritualidade Reformada",
         author: "Anoymunt",
-        description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rerum.",
+        description: "Uma exploração profunda da espiritualidade reformada, abordando suas raízes bíblicas e teológicas.",
     },
 ]
 
@@ -37,11 +37,11 @@ const BestBooks = ({ handleOrderPopup }) => {
                     <p
                         className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
                     >
-                        Treding Books
+                        Livros em alta
                     </p>
-                    <h1 className="text-3xl font-bold">Best Books</h1>
+                    <h1 className="text-3xl font-bold">Melhores Livros</h1>
                     <p className="text-xs text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rerum.
+                        Descubra os livros mais recomendados e populares entre nossos leitores. Cada obra é uma janela para novas ideias e perspectivas.
                     </p>
                 </div>
                 {/* card section */}
@@ -78,7 +78,7 @@ const BestBooks = ({ handleOrderPopup }) => {
                                     onClick={handleOrderPopup}
                                     className=" bg-primary to-secondary text-white py-2 px-4 rounded-full mt-4 hover:scale-105 duration-200 group-hover:bg-white group-hover:text-primary"
                                 >
-                                        Order Now
+                                        Compre Já
                                 </button>
                             </div>
                         </div>
