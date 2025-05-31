@@ -1,43 +1,45 @@
 import React from "react";
-import Book1 from "../../assets/books/book1.jpg";
-import Book2 from "../../assets/books/book2.jpg";
-import Book3 from "../../assets/books/book3.jpg";
+import Book1 from "../../assets/books/berkhof.jpg";
+import Book2 from "../../assets/books/comentario_esdras.jpg";
+import Book3 from "../../assets/books/espiritualidade_reformada.jpg";
+import Book4 from "../../assets/books/dogmatica.jpg";
+import Book5 from "../../assets/books/mais_vencedores.jpg";
 import { FaStar } from "react-icons/fa";
 
 const BooksData = [
     {
         id: 1,
         img: Book1,
-        title: "Who's there?",
-        author: "John",
+        title: "Teologia Sistematica",
+        author: "Louis Berkhof",
         rating: 4.5,
     },
     {
         id: 2,
         img: Book2,
-        title: "His Life",
-        author: "Felicio",
+        title: "Estudos Biblicos Expositivos de Esdras e Neemias",
+        author: "Derek Thomas",
         rating: 4.5,
     },
     {
         id: 3,
         img: Book3,
-        title: "Lost Boy",
-        author: "Mary Odette",
+        title: "Espiritualidade Reformada",
+        author: "Joel Beeke",
         rating: 5.0,
     },
     {
         id: 4,
-        img: Book1,
-        title: "Who's there?",
-        author: "John",
+        img: Book4,
+        title: "Dogmática Reformada",
+        author: "Herman Bavinck",
         rating: 4.7,
     },
     {
         id: 5,
-        img: Book2,
-        title: "His Life",
-        author: "Felicio",
+        img: Book5,
+        title: "Mais que Vencedores",
+        author: "William Hendriksen",
         rating: 4.1,
     },
 ]
@@ -53,11 +55,11 @@ const AllBooks = () => {
                     <p
                         className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
                     >
-                        Top Books for you
+                        Melhores Livros para Você Adquirir
                     </p>
-                    <h1 className="text-3xl font-bold">Top Books</h1>
+                    <h1 className="text-3xl font-bold">Nosso acervo</h1>
                     <p className="text-xs text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rerum {" "}
+                        Oferecimos uma seleção diversificada de livros que abrangem teologia, espiritualidade e estudos bíblicos. Cada obra é escolhida para enriquecer sua jornada de fé e conhecimento.
                     </p>
                 </div>
                 {/* card section */}
@@ -80,7 +82,7 @@ const AllBooks = () => {
                         }
                     </div>
                     <div className="flex justify-center">
-                        <button className="text-center mt-10 cursor-pointer bg-primary text-white py-2 px-5 rounded-full">View All books</button>
+                        <button className="text-center mt-10 cursor-pointer bg-primary text-white py-2 px-5 rounded-full">Acesse o acervo completo</button>
                     </div>
                 </div>
             </div>

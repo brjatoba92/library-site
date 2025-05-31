@@ -7,13 +7,13 @@ import DarkMode from "./DarkMode";
 const Menu = [
     {
         id: 1,
-        name: "Home",
+        name: "Inicio",
         link: "/#",
 
     },
     {
         id: 2,
-        name: "Best Seller",
+        name: "Mais vendidos",
         link: "/#",
     },
     
@@ -21,15 +21,15 @@ const Menu = [
 
 const DropdownLinks = [
     {
-        name: "Trending Books",
+        name: "Livros em Alta",
         link: "/#",
     },
     {
-        name: "Best Selling",
+        name: "Mais Vendidos",
         link: "/#",
     },
     {
-        name: "Authors",
+        name: "Autores",
         link: "/#",
     }
 ]
@@ -42,7 +42,7 @@ const Navbar = ({ handleOrderPopup }) => {
                     <div>
                         <a href={"/#"} className="font-bold text-2xl sm:text-3xl flex gap-2">
                             <img src={Logo} alt="" className="w-10"/>
-                            Books
+                            Livraria Sola Fide
                         </a>
                     </div>
                     <div className="flex items-center justify-beetwen gap-4 ">
@@ -63,7 +63,7 @@ const Navbar = ({ handleOrderPopup }) => {
                            {/* dropdown section */}
                            <li className="group relative cursor-pointer">
                             <a href="/#" className="flex h-[72px] items-center gap[2px]">
-                                Quick Links
+                                Acesso Rápido
                                 <span>
                                     <FaCaretDown className="transition duration-200 group-hover:rotate-180" />
                                 </span>
@@ -87,7 +87,7 @@ const Navbar = ({ handleOrderPopup }) => {
                             onClick={() => handleOrderPopup()}
                             className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full flex items-center gap-3 hover:scale-105 duration-300" 
                         >
-                            Order
+                            Compras
                             <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
                         </button>
                     </div>
