@@ -1,9 +1,9 @@
-# Boa Leitura Livraria Site
+# Livraria Sola Fide
 
 ![BookClub Demo](/public/demo.png 'Library Demo')
 
 ## Descrição
-Este projeto visou o desenvolvimento de um site para o ramo de livraria.
+Desenvolvimento de um site para o setor de livrarias, com foco em usabilidade, organização de catálogo e experiência do usuário.
 
 ## Live Version
 
