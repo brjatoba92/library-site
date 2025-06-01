@@ -5,20 +5,20 @@ const TestimonialData = [
     {
         id: 1,
         img: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        name: "John Doe",
-        text: "This bookstore is a hidden gem! Every time I walk in, I leave with a stack of treasures I can’t wait to read.",
+        name: "Sergio Buarque",
+        text: "Lugar incrível! A variedade de livros é impressionante e o atendimento é sempre excelente. Me sinto em casa aqui.",
     },
     {
         id: 2,
         img: "https://images.unsplash.com/photo-1640043964265-c03b5ca0b715?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D0",
-        name: "Martha Klein",
-        text: "The selection is incredible—I've discovered so many new authors here that I now adore. It's my go-to place for book shopping.",
+        name: "Carla Mendez",
+        text: "A seleção é incrível - descobri tantos novos autores aqui que agora adoro. É meu lugar favorito para comprar livros.",
     },
     {
         id: 3,
         img: "https://images.unsplash.com/photo-1600176957290-e3c4077f4a47?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVyc29uJTIwc2VyYmlhbnxlbnwwfHwwfHx8MA%3D%3D",
-        name: "Jovinko Flinck",
-        text: "I love how every visit feels like an adventure. The staff always recommends something amazing that ends up being my new favorite book!",
+        name: "Eliel Carvalho",
+        text: "A livraria é um verdadeiro paraíso para os amantes de livros. A atmosfera é acolhedora e a equipe é super atenciosa.",
     },
 ]
 
@@ -74,11 +74,11 @@ const Testemonial = () => {
                     <p
                         className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
                     >
-                        What our customer says
+                        O que nossos clientes dizem
                     </p>
-                    <h1 className="text-3xl font-bold">Testimonials</h1>
+                    <h1 className="text-3xl font-bold">Depoimentos</h1>
                     <p className="text-xs text-gray-400">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, rerum.{" "}
+                        Veja o que nossos clientes dizem sobre nossa livraria{" "}
                     </p>
                 </div>
                 {/* card section */}

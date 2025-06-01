@@ -4,6 +4,13 @@ import Book2 from "../../assets/books/comentario_esdras.jpg";
 import Book3 from "../../assets/books/espiritualidade_reformada.jpg";
 import Book4 from "../../assets/books/dogmatica.jpg";
 import Book5 from "../../assets/books/mais_vencedores.jpg";
+import Book6 from "../../assets/books/criados.jpg";
+import Book7 from "../../assets/books/deus_revela.jpg";
+import Book8 from "../../assets/books/eleitos_deus.jpg";
+import Book9 from "../../assets/books/grego.jpg";
+import Book10 from "../../assets/books/hermeneutica.jpg";
+import Book11 from "../../assets/books/romanos.jpg";
+import Book12 from "../../assets/books/westminster.jpg";
 import { FaStar } from "react-icons/fa";
 
 const BooksData = [
@@ -42,6 +49,55 @@ const BooksData = [
         author: "William Hendriksen",
         rating: 4.1,
     },
+    {
+        id: 6,
+        img: Book6,
+        title: "Criados à Imagem de Deus",
+        author: "Anthony Hoekema",
+        rating: 4.5,
+    },
+    {
+        id: 7,
+        img: Book7,
+        title: "O Deus que se Revela",
+        author: "Francis Schaffer",
+        rating: 4.5,
+    },
+    {
+        id: 8,
+        img: Book8,
+        title: "Eleitos de Deus",
+        author: "RC Sproul",
+        rating: 4.5,
+    },
+    {
+        id: 9,
+        img: Book9,
+        title: "Lexico Grego do Novo Testamento",
+        author: "RC Sproul",
+        rating: 4.5,
+    },
+    {
+        id: 10,
+        img: Book10,
+        title: "Introdução à Hermenêutica Biblica",
+        author: "Walter Kaiser",
+        rating: 4.5,
+    },
+    {
+        id: 11,
+        img: Book11,
+        title: "Comentario de Romanos",
+        author: "William Hendriksen",
+        rating: 4.5,
+    },
+    {
+        id: 12,
+        img: Book12,
+        title: "Simbolos de Fé de Westminster",
+        author: "Westminster Assembly",
+        rating: 4.5,
+    }
 ]
 const AllBooks = () => {
     return <>

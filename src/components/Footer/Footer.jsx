@@ -21,6 +21,43 @@ const FooterLinks = [
     },
 ];
 
+const CategoriasLinks = [
+    {
+        title: "Teologia Sistematica",
+        link: "/#",
+    },
+    {
+        title: "Exegese",
+        link: "/#",
+    },
+    {
+        title: "Comentarios Biblicos",
+        link: "/#",
+    },
+    {
+        title: "Bíblias",
+        link: "/#",
+    },
+    {
+        title: "Hinários",
+        link: "/#",
+    },
+    {
+        title: "Livros de Devocionais",
+        link: "/#",
+    },
+    {
+        title: "Livros de Teologia Prática",
+        link: "/#",
+    },
+    {
+        title: "Livros de Ética Cristã",
+        link: "/#",
+    },
+
+    
+]
+
 const anoAtual = new Date().getFullYear();
 
 const Footer = () => {
@@ -30,18 +67,18 @@ const Footer = () => {
                 {/* company details */}
                 <div className="py-8 px-4">
                     <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3">
-                        Books Store
+                        Livraria Sola Fide
                     </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}</p>
+                    <p>Uma livraria de qualidade{" "}</p>
                     <br />
                     {/* social media links */}
                     <div className="flex items-center gap-3">
                         <FaLocationArrow />
-                        <p>Otawa, Canada</p>
+                        <p>Maceió, Brasil</p>
                     </div>
                     <div className="flex items-center gap-3">
                         <FaMobileAlt />
-                        <p>+111-222-333</p>
+                        <p>(82) 9 3425-9755</p>
                     </div>
                     <div className="flex items-center gap-3 mt-6">
                         <a href="#">
@@ -64,7 +101,7 @@ const Footer = () => {
                     <div>
                         <div className="py-8 px-4">
                             <h1 className="text-xl font-bold sm:text-left text-justify mb-3 ">
-                                Importants Links
+                                Institucional
                             </h1>
                             <ul className="flex flex-col gap-3">
                                 {
@@ -81,11 +118,11 @@ const Footer = () => {
                     <div>
                         <div className="py-8 px-4">
                             <h1 className="text-xl font-bold sm:text-left text-justify mb-3 ">
-                                Importants Links
+                                Categorias
                             </h1>
                             <ul className="flex flex-col gap-3">
                                 {
-                                   FooterLinks.map((data)=>(
+                                   CategoriasLinks.map((data)=>(
                                     <li className="cursor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1 text-gray-500">
                                         <span>&#11162;</span>
                                         <span>{data.title}</span>
@@ -98,17 +135,21 @@ const Footer = () => {
                     <div>
                         <div className="py-8 px-4">
                             <h1 className="text-xl font-bold sm:text-left text-justify mb-3 ">
-                                Importants Links
+                                Atendimento
                             </h1>
                             <ul className="flex flex-col gap-3">
-                                {
-                                   FooterLinks.map((data)=>(
-                                    <li className="cursor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1 text-gray-500">
-                                        <span>&#11162;</span>
-                                        <span>{data.title}</span>
-                                    </li>
-                                   )) 
-                                }
+                                <li className="cursor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1 text-gray-500">
+                                    <span>&#11162;</span>
+                                    <span>FAQ</span>
+                                </li>
+                                <li className="cursor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1 text-gray-500">
+                                    <span>&#11162;</span>
+                                    <span>Suporte</span>
+                                </li>
+                                <li className="cursor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1 text-gray-500">
+                                    <span>&#11162;</span>
+                                    <span>Política de Privacidade</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -118,7 +159,7 @@ const Footer = () => {
             <div className="">
                 <div className="border-t-2 border-gray-300/50">
                     <p className="text-center py-10">
-                        Copyright &copy; {anoAtual} All Rights Reserved || Made with <span className="text-red-600">❤</span> by <span className="text-primary">Jatoba Dev Technologies</span>
+                        Copyright &copy; {anoAtual} Todos os Direitos Reservados || Desenvolvido  <span className="text-red-600">❤</span> por <span className="text-primary">Jatoba Dev Technologies</span>
                     </p>
                 </div>
             </div>
