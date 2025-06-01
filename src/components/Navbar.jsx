@@ -7,7 +7,7 @@ import DarkMode from "./DarkMode";
 const Menu = [
     {
         id: 1,
-        name: "Inicio",
+        name: "Promoção do Dia",
         link: "/#",
 
     },
@@ -16,23 +16,80 @@ const Menu = [
         name: "Mais vendidos",
         link: "/#",
     },
+    {
+        id: 3,
+        name: "Novidades",
+        link: "/#",
+    },
+    {
+        id: 4,
+        name: "Kit Reformado ",
+        link: "/#",
+    }
     
 ]
 
-const DropdownLinks = [
+const BibliasDropdownLinks = [
     {
-        name: "Livros em Alta",
+        name: "NAA",
         link: "/#",
     },
     {
-        name: "Mais Vendidos",
+        name: "ARA",
         link: "/#",
     },
     {
-        name: "Autores",
+        name: "NVI",
         link: "/#",
     }
 ]
+
+const CombosDropdownLinks = [
+    {
+        name: "Spurgeon",
+        link: "/#",
+    },
+    {
+        name: "Bavinck",
+        link: "/#",
+    },
+    {
+        name: "Matthew Henry",
+        link: "/#",
+    }
+]
+
+const CategoriesDropdownLinks = [
+    {
+        name: "Sistematica",
+        link: "/#",
+    },
+    {
+        name: "Exegese",
+        link: "/#",
+    },
+    {
+        name: "Comentarios",
+        link: "/#",
+    },
+    {
+        name: "Devocionais",
+        link: "/#",
+    },
+    {
+        name: "Hinos",
+        link: "/#",
+    },
+    {
+        name: "Infantis",
+        link: "/#",
+    },
+    {
+        name: "Literatura Reformada",
+        link: "/#",
+    }
+]
+
 
 const Navbar = ({ handleOrderPopup }) => {
     return (
@@ -63,7 +120,7 @@ const Navbar = ({ handleOrderPopup }) => {
                            {/* dropdown section */}
                            <li className="group relative cursor-pointer">
                             <a href="/#" className="flex h-[72px] items-center gap[2px]">
-                                Acesso Rápido
+                                Combos
                                 <span>
                                     <FaCaretDown className="transition duration-200 group-hover:rotate-180" />
                                 </span>
@@ -71,7 +128,7 @@ const Navbar = ({ handleOrderPopup }) => {
                             {/* dropdown link section */}
                             <div className="absolute -left-9 z-[10] hidden group-hover:block text-black bg-white p-2 shadow-md w-[150px]">
                                 <ul>
-                                    {DropdownLinks.map((data) => (
+                                    {CombosDropdownLinks.map((data) => (
                                         <li key={data.id}>
                                             <a href={data.link} className="inline-block w-full rounded-md p-2 hover:bg-primary/20 shadow-md">
                                                 {data.name}
@@ -79,7 +136,46 @@ const Navbar = ({ handleOrderPopup }) => {
                                         </li>
                                     ))}
                                 </ul>
-                                
+                            </div>
+                            </li>
+                           <li className="group relative cursor-pointer">
+                            <a href="/#" className="flex h-[72px] items-center gap[2px]">
+                                Biblias
+                                <span>
+                                    <FaCaretDown className="transition duration-200 group-hover:rotate-180" />
+                                </span>
+                            </a>
+                            {/* dropdown link section */}
+                            <div className="absolute -left-9 z-[10] hidden group-hover:block text-black bg-white p-2 shadow-md w-[150px]">
+                                <ul>
+                                    {BibliasDropdownLinks.map((data) => (
+                                        <li key={data.id}>
+                                            <a href={data.link} className="inline-block w-full rounded-md p-2 hover:bg-primary/20 shadow-md">
+                                                {data.name}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            </li>
+                            <li className="group relative cursor-pointer">
+                            <a href="/#" className="flex h-[72px] items-center gap[2px]">
+                                Categorias
+                                <span>
+                                    <FaCaretDown className="transition duration-200 group-hover:rotate-180" />
+                                </span>
+                            </a>
+                            {/* dropdown link section */}
+                            <div className="absolute -left-9 z-[10] hidden group-hover:block text-black bg-white p-2 shadow-md w-[150px]">
+                                <ul>
+                                    {CategoriesDropdownLinks.map((data) => (
+                                        <li key={data.id}>
+                                            <a href={data.link} className="inline-block w-full rounded-md p-2 hover:bg-primary/20 shadow-md">
+                                                {data.name}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                             </li>
                         </ul>
